@@ -21,10 +21,11 @@ public class RegisterActivity extends AppCompatActivity {
         addNotification();
     }
 
+
     private void addNotification() {
         NotificationCompat.Builder builder =
                 new NotificationCompat.Builder(this)
-                        .setSmallIcon(R.drawable.ic_launcher_background)
+                        .setSmallIcon(R.drawable.ic_logo_background)
                         .setContentTitle("Se ha registrado con exito")
                         .setContentText("Revise su correo electronico en los proximos 2 dias")
                         .setAutoCancel(true)
