@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:padding="4dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
     tools:context=".RegisterActivity">
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:layout_width="wrap_content"
+            android:id="@+id/txtNombre"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="@string/names" />
+            android:text="@string/names"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold" />
         <EditText
-            android:id="@+id/txtNames"
+            android:id="@+id/editNames"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"
+            android:text=""/>
+
     </LinearLayout>
 
     <LinearLayout
@@ -29,11 +44,15 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/lastNames" />
-        <EditText
             android:id="@+id/txtLastNames"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/lastNames"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/editLastNames"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -45,15 +64,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/id" />
-        <EditText
             android:id="@+id/txtId"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/id"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/editId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:text=""/>
     </LinearLayout>
 
     <LinearLayout
@@ -61,15 +85,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/age" />
-        <EditText
             android:id="@+id/txtAge"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/age"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/editAge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="number"
+            android:text=""/>
     </LinearLayout>
 
     <LinearLayout
@@ -77,15 +106,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/heigth" />
-        <EditText
             android:id="@+id/txtHeigth"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/height"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/editHeigth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="numberDecimal"
+            android:text=""/>
     </LinearLayout>
 
     <LinearLayout
@@ -93,15 +127,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/weight" />
-        <EditText
             android:id="@+id/txtWeight"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/weight"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/editWeight"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="number" />
+            android:inputType="numberDecimal"
+            android:text=""/>
     </LinearLayout>
 
     <LinearLayout
@@ -109,15 +148,20 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/email" />
-        <EditText
             android:id="@+id/txtEmail"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/editEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:text=""/>
     </LinearLayout>
 
     <LinearLayout
@@ -125,11 +169,15 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/username" />
-        <EditText
             android:id="@+id/txtUsernameRegister"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/username"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/editUsernameRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -141,15 +189,19 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/password" />
-        <EditText
             android:id="@+id/txtPasswordRegister"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+        <EditText
+            android:id="@+id/editPasswordRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="text" />
+            android:inputType="textPassword" />
     </LinearLayout>
 
     <Button
@@ -158,7 +210,10 @@
         android:onClick="addPatient"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"/>
 
 
 
